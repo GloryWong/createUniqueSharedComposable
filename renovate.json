@@ -2,13 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>GloryWong/renovate-config:npm"
-  ],
-  "packageRules": [
-    {
-      "matchDepTypes": [
-        "peerDependencies"
-      ],
-      "enabled": false
-    }
   ]
 }
