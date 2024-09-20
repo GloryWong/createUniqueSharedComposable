@@ -1,7 +1,7 @@
 {
   "name": "create-unique-shared-composable",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "author": {
     "name": "GloryWong",
@@ -12,7 +12,15 @@
   "homepage": "https://github.com/GloryWong/createUniqueSharedComposable#readme",
   "repository": "github:GloryWong/createUniqueSharedComposable",
   "bugs": "https://github.com/GloryWong/createUniqueSharedComposable/issues",
-  "keywords": ["vue", "vue3", "typescript", "composable", "shared", "states", "key"],
+  "keywords": [
+    "vue",
+    "vue3",
+    "typescript",
+    "composable",
+    "shared",
+    "states",
+    "key"
+  ],
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
