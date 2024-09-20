@@ -1,0 +1,60 @@
+{
+  "name": "create-unique-shared-composable",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "",
+  "author": {
+    "name": "GloryWong",
+    "email": "glorywong1001@gmail.com",
+    "url": "https://glorywong.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/GloryWong/createUniqueSharedComposable#readme",
+  "repository": "github:GloryWong/createUniqueSharedComposable",
+  "bugs": "https://github.com/GloryWong/createUniqueSharedComposable/issues",
+  "keywords": ["vue", "vue3", "typescript", "composable", "shared", "states", "key"],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "pnpm test && pnpm build",
+    "prepare": "pnpm simple-git-hooks",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage.enabled"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.6.2",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@tsconfig/node18": "^18.2.4",
+    "@vitest/coverage-istanbul": "^2.1.1",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.10.0",
+    "happy-dom": "^15.7.4",
+    "lint-staged": "^15.2.10",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1",
+    "vue": "^3.5.6"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm commitlint --edit ${1}",
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm lint:fix"
+  }
+}
